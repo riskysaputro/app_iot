@@ -1,6 +1,6 @@
 import React from 'react';
-import SensorDisplay from './components/SensorDisplay';
-import ControlPanel from './components/ControlPanel';
+import SensorDisplay from '../Components/SensorDisplay';
+import ControlPanel from '../Components/ControlPanel';
 
 function App() {
   return (
@@ -13,27 +13,6 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
