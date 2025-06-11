@@ -9,7 +9,8 @@ const ControlPanel = () => {
   });
 
   const fetchStatus = async () => {
-    const res = await axios.get('http://localhost:3000/api/control');
+    const res = await axios.get('https://serveriot-production-fd82.up.railway.app/api/control');
+    // const res = await axios.get('http://localhost:3000/api/control');
     setStatus(res.data);
   };
   // console.log('data control', status);
@@ -17,7 +18,8 @@ const ControlPanel = () => {
   const updateStatus = async (updatedFields) => {
     const newStatus = { ...status, ...updatedFields };
     setStatus(newStatus);
-    await axios.post('http://localhost:3000/api/control', newStatus);
+    await axios.post('https://serveriot-production-fd82.up.railway.app/api/control', newStatus);
+    // await axios.post('http://localhost:3000/api/control', newStatus);
   };
 
   useEffect(() => {
@@ -26,7 +28,7 @@ const ControlPanel = () => {
 
   return (
     <div className="items-center justify-center">
-      <h2 className='font-bold text-xl'>Kontrol Aktuator</h2>
+      <h2 className="font-bold text-xl">Kontrol Aktuator</h2>
       <div>
         <label>
           Mode:
@@ -39,7 +41,7 @@ const ControlPanel = () => {
       <div>
         <label>
           Pompa Air:
-          <button onClick={() => updateStatus({ pump: !status.pump })} disabled={status.mode === 'auto'} className='bg-gray-600 rounded-lg p-2'>
+          <button onClick={() => updateStatus({ pump: !status.pump })} disabled={status.mode === 'auto'} className="bg-gray-600 rounded-lg p-2">
             {status.pump ? 'Matikan' : 'Nyalakan'}
           </button>
         </label>

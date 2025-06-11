@@ -9,7 +9,8 @@ const Dashboard = () => {
   // Fetch realtime data
   const fetchLatest = async () => {
     try {
-      const res = await fetch('http://localhost:3000/api/sensor/latest');
+      const res = await fetch('https://serveriot-production-fd82.up.railway.app/api/sensor/latest');
+      // const res = await fetch('http://localhost:3000/api/sensor/latest');
       const json = await res.json();
       setData(json);
     } catch (err) {
@@ -20,7 +21,8 @@ const Dashboard = () => {
   // Fetch history data
   const fetchHistory = async () => {
     try {
-      const res = await fetch('http://localhost:3000/api/sensor');
+      // const res = await fetch('http://localhost:3000/api/sensor');
+      const res = await fetch('https://serveriot-production-fd82.up.railway.app/api/sensor');
       const json = await res.json();
       setHistory(json);
     } catch (err) {
