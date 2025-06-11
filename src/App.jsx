@@ -1,6 +1,6 @@
 import React from 'react';
-import SensorDisplay from '../Components/SensorDisplay';
-import ControlPanel from '../Components/ControlPanel';
+import SensorDisplay from '../Components/SensorDisplay.jsx';
+import ControlPanel from '../Components/ControlPanel.jsx';
 
 function App() {
   return (
