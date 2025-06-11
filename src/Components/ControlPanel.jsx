@@ -41,7 +41,7 @@ const ControlPanel = () => {
       <div>
         <label>
           Pompa Air:
-          <button onClick={() => updateStatus({ pump: !status.pump })} disabled={status.mode === 'auto'} className="bg-gray-600 rounded-lg p-2">
+          <button onClick={() => updateStatus({ pump: !status.pump })} disabled={status.mode === 'auto'} className="bg-blue-500 rounded-lg p-2">
             {status.pump ? 'Matikan' : 'Nyalakan'}
           </button>
         </label>
