@@ -50,7 +50,7 @@ const Dashboard = () => {
                 <strong>Soil Moisture:</strong> {data.soil}
               </p> */}
               <AnimatedCircularProgressBarDemo value={data.soil} min={965} max={2650} />
-              {data.soil}
+              <span className="font-bold">Kelembaban Tanah:{data.soil}</span>
               <p>
                 <strong>Air Quality:</strong> {data.air}
               </p>
