@@ -8,6 +8,6 @@ export default defineConfig({
   preview: {
     port: 8080,
     host: '0.0.0.0',
-    allowedHosts: ['appiot-production.up.railway.app'], // Ganti sesuai domain kamu di Railway
+    allowedHosts: ['punya-kelompok-5.up.railway.app'], // Ganti sesuai domain kamu di Railway
   },
 });
