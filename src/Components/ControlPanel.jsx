@@ -49,7 +49,7 @@ const ControlPanel = () => {
       <div>
         <label>
           Penghisap Udara:
-          <button onClick={() => updateStatus({ fan: !status.fan })} disabled={status.mode === 'auto'}>
+          <button onClick={() => updateStatus({ fan: !status.fan })} disabled={status.mode === 'auto'} className="bg-blue-500 rounded-lg p-2">
             {status.fan ? 'Matikan' : 'Nyalakan'}
           </button>
         </label>
