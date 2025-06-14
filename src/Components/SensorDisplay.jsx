@@ -52,6 +52,7 @@ const Dashboard = () => {
               <AnimatedCircularProgressBarDemo value={data.soil} min={965} max={2650} />
               <span className="font-bold">Kelembaban Tanah:{data.soil}</span>
               <p>
+                <AnimatedCircularProgressBarDemo value={data.air} min={0} max={2000} />
                 <strong>Air Quality:</strong> {data.air}
               </p>
               <p className="text-sm text-blue-500">Last update: {new Date(data.timestamp).toLocaleTimeString()}</p>
